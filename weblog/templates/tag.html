@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}标记为“{{ tag.name }}”{% endblock %}
+{% block body %}
+  <h1>标记为<a href=""> “{{ tag.name }}”</a>的文章</h1>
+  <ul>
+  {%- for entry in entries %}
+    <li>
+      <a href="/article/{{ entry.id }}">{{ entry.title }}</a>
+          写于 {{ format_date(entry.pub_time) }}
+    </li>
+  {%- endfor %}
+  </ul>
+{% endblock %}

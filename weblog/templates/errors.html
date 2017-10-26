@@ -1,0 +1,21 @@
+{% extends "homepage.html" %}
+  
+  {% block head %}
+    <title>{{ errortitle }}</title>
+  {% endblock %}
+
+  {% block body %}
+    {%if '403' in errortitle %}
+        <div class="inner cover">
+            <h1 class="cover-heading">亲，您没有访问这颗行星的权限哦！</h1>
+        </div>
+    {% elif '404' in errortitle %}
+      <div class="inner cover">
+          <h1 class="cover-heading">嘿嘿，您要找的这颗行星不存在哦！</h1>
+      </div>
+    {% elif '500' in errortitle %}
+      <div class="inner cover">
+          <h1 c class="cover-heading">不好意思哦，服务推进器出现了一些小毛病哦！</h1>
+      </div>
+    {% endif %}
+  {% endblock %}

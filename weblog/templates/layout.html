@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{config.AUTHOR}}">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+
+  {% block htmlhead %}
+    <title>{% block title %}{% endblock %} | {{ config.AUTHOR }}'s Blog</title>
+  {% endblock %}
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/mycss/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../static/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+
+          <a class="blog-nav-item" href="/">Home</a>
+          {% if flag=='blog' %}
+          <a class="blog-nav-item active" href="/index">Blog</a>
+          {% else %}
+          <a class="blog-nav-item" href="/index">Blog</a>
+          {% endif %}
+
+          {% if flag=='tag' %}
+          <a class="blog-nav-item active" href="/tags">tags</a>
+          {% else %}
+          <a class="blog-nav-item" href="/tags">tags</a>
+          {% endif %}
+
+          {% if flag=='link'%}
+          <a class="blog-nav-item active" href="/links">Links</a>
+          {% else %}
+          <a class="blog-nav-item " href="/links">Links</a>
+          {% endif %}
+    <!-- <a class="blog-nav-item  active" href="#">About</a> -->
+        </nav>
+      </div>
+    </div>
+
+  <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">{{ config.AUTHOR }}</a>'s Blog</h1>
+        <p class="lead blog-description">大二狗的东拼西凑.</p>
+      </div><!-- blog-header -->
+    
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          {% block body %}{% endblock %}
+        </div>
+
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+              <h4>About</h4>
+              <p class="first">我是一只大二狗，自己动手做个网站玩玩。
+                               本人技术有限，开发期间参考多位博主和githuber的开源代码，对他们表示感谢!</p>
+              <p class="second">Flask+Bootstrap+Gunicorn+<br/>
+				Nginx共同组建本站</p>
+            </div><!-- sidebar-module-inset -->
+
+
+          <div class="sidebar-module">
+            <h4>Tags</h4>
+              <ol class="list-unstyled">
+              {% for tag in tagz %}
+                <li><a href="/tag/{{ tag.id }}">{{ tag.name }}</a></li>
+              {% endfor %}
+              </ol>
+          </div><!-- sidebar-module  -->
+
+<!--             <div class="sidebar-module">
+  <h4>Elsewhere</h4>
+  <ol class="list-unstyled">
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Facebook</a></li>
+  </ol>
+</div>siderbar-module -->
+          </div>
+      </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>&copy; Copyright 2016.Contact me via
+        <a href="mailto:yepmoon@outlook.com">mail</a>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div><!-- blog-footer -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="../static/docs/assets/js/docs.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

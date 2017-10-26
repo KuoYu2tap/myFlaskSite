@@ -1,0 +1,522 @@
+    1  dir
+    2  cd ..
+    3  dir
+    4  sudo apt-get updata
+    5  sudo apt-get update
+    6  sudo apt-get install python-dev python-pip python-virtualenv
+    7  sudo apt-get install nginx
+    8  diar
+    9  dir
+   10  cd var/
+   11  dir
+   12  mkdir www/
+   13  dir
+   14  cd www
+   15  cd ..
+   16  cd /
+   17  dir
+   18  cd ..
+   19  dir
+   20  cd ~
+   21  dir
+   22  tar zxvf MySite.rar
+   23  rm MySite.rar MySite.tar
+   24  dir
+   25  rm weblog-master-10-4/ MySite/
+   26  rename weblog-master-10-4/ MySite/
+   27  mv  weblog-master-10-4/ MySite/
+   28  dir
+   29  cd MySite/
+   30  dir
+   31  cd ..
+   32  dir
+   33  mv MySite/ /var/www/
+   34  dir
+   35  cd /var/
+   36  cd www/
+   37  dir
+   38  cd MySite/
+   39  dir
+   40  pip
+   41  cd flask/
+   42  dir
+   43  cd ..
+   44  dir
+   45  rm flask/
+   46  rm -rf flask/
+   47  dir
+   48  mkdir flask
+   49  dir
+   50  cd flask/
+   51  pip install virenv
+   52  pip install python-virtualenv
+   53  dir
+   54  cd..
+   55  cd ..
+   56  virtualenv flask/
+   57  source kvenv/bin/activate
+   58  source flask/bin/activate
+   59  dir
+   60  pip install requirements.txt 
+   61  pip install -r requirements.txt 
+   62  vim requirements.txt 
+   63  pip install -r requirements.txt 
+   64  sudo apt-get install python-lxml 
+   65  dir
+   66  rm app.db 
+   67  dir
+   68  python create_db.py 
+   69  pip install sqlalchemy-migrate==0.7.2 
+   70  python create_db.py 
+   71  pip instlal sqlalchemy
+   72  pip install sqlalchemy
+   73  dir
+   74  python create_db.py 
+   75  vim requirements.txt 
+   76  pip install -r requirements.txt 
+   77  dir
+   78  python create_db.py 
+   79  dir
+   80  vim run.py 
+   81  python run.py 
+   82  dir
+   83  cd ..
+   84  sudo chmod 777 /var/www/MySite/
+   85  dir
+   86  cd MySite/
+   87  pip install gunicorn
+   88  dir
+   89  vim run.py 
+   90  vim wsgi.py
+   91  cat config.py
+   92  vim config.py
+   93  gunicorn -w 4 -b 127.0.0.1:8080 wsgi:run.py 
+   94  gunicorn -w 4 -b 127.0.0.1:8080 wsgi:wsgi.py
+   95  dir
+   96  vim run.py 
+   97  gunicorn -w 4 -b 127.0.0.1:8080 run
+   98  gunicorn -w 4 -b 127.0.0.1:8080 run:run
+   99  dir
+  100  vim run.py
+  101  gunicorn -w 4 -b 127.0.0.1:8080 run
+  102  gunicorn -w 4 -b 127.0.0.1:8080 wsgi:run
+  103  gunicorn -w 2 -b 127.0.0.1:8080 wsgi:run
+  104  gunicorn -w 2 -b 127.0.0.1:8080 run
+  105  gunicorn -w 2 -b 127.0.0.1:8080 run:run
+  106  dir
+  107  vim wsgi.py
+  108  dir
+  109  ll
+  110  cd weblog/
+  111  dir
+  112  vim __init__.py
+  113  vm __init__.py
+  114  vim __init__.py
+  115  dir
+  116  cat __init__.py
+  117  dir
+  118  cd ..
+  119  gunicorn -w 2 -b 127.0.0.1:8080 /weblog/__init__
+  120  dir
+  121  cd weblog/
+  122  dir
+  123  gunicorn -w 2 -b 127.0.0.1:8080 __init__.py
+  124  gunicorn -w 2 -b 127.0.0.1:8080 __init__
+  125  cd /etc/nginx/sites-available/
+  126  dir
+  127  sudo cp /etc/nginx/site-avalidable/default /etc/nginx/site-avalidable/default.bak
+  128  sudp cp default default.bak
+  129  sudo cp default default.bak
+  130  dir
+  131  vim default
+  132  sudo service nginx restart 
+  133  sudo vim /etc/init/mysite.conf
+  134  sudo service mysite start
+  135  dir
+  136  cd /etc/init
+  137  dir
+  138  grep mysite
+  139  cat mysite.conf 
+  140  sudo service mysite start
+  141  cat mysite.conf
+  142  vim mysite.conf 
+  143  sudo service mysite.conf start
+  144  cd 、
+  145  cd /
+  146  dir
+  147  cd te
+  148  cd etc/
+  149  dir
+  150  ll
+  151  dir
+  152  history 
+  153  cd /
+  154  cd var/www/
+  155  dir
+  156  cd MySite/
+  157  dir
+  158  vim run.py
+  159  dir
+  160  cd cd weblog/
+  161  dir
+  162  vim run.py
+  163  cd weblog/
+  164  dir
+  165  vim __init__.py
+  166  cd ..
+  167  vim run.py
+  168  pkill gunicron
+  169  dir
+  170  gunicron -w 4 -b 0 0.0.0.0:8080 run.app
+  171  history 
+  172  dir
+  173  rm wsgi.py
+  174  dir
+  175  ll
+  176  rm wsgi.pyc 
+  177  dir
+  178  ll
+  179  gunicorn -w 4 -b 127.0.0.1:8080 run:app
+  180  dir
+  181  pkill gunicorn
+  182  dir
+  183  resart nginx
+  184  nginx
+  185  pkill nginx 
+  186  nginx 
+  187  dir
+  188  cd /etc/init/
+  189  vim mysite.conf 
+  190  sudo service nginx restart
+  191  dir
+  192  cd ...
+  193  cd /
+  194  dir
+  195  cd var/
+  196  dir
+  197  cd www/
+  198  dir
+  199  cd /etc/nginx/sites-available/
+  200  vim default
+  201  nginx 
+  202  gunicron -w 4 -b 0 0.0.0.0:8080 run.app
+  203  gunicorn -w 4 -b 0 0.0.0.0:8080 run.app
+  204  gunicorn -w4 -b0 127.0.0.1:8080 run.app
+  205  pkill gunicorn
+  206  gunicorn -w4 -b0 127.0.0.1:8080 run.app
+  207  gunicorn run:app -b 0.0.0.0:8080
+  208  gunicorn run:app -b 127.0.0.1:8080
+  209  gunicorn run:app -b 120.27.120.246:8080
+  210  cd /
+  211  dir
+  212  cd var/
+  213  dir
+  214  cd w
+  215  cd www/
+  216  dir
+  217  cd MySite/
+  218  dir
+  219  ll
+  220  cd /etc/nginx/sites-available/
+  221  cat default
+  222  cd /etc/init/
+  223  dir
+  224  cd /
+  225  cd /var/www/
+  226  cd MySite/
+  227  dir
+  228  gunicorn run:app -b 120.27.120.246:8080
+  229  gunicorn run:app -b 127.0.0.1:8080
+  230  pkill nginx
+  231  sudo nano /etc/nginx/site-avalidable/default
+  232  cd /etc/nginx/sites-available/
+  233  vim default
+  234  sudo service restart
+  235  sudo service nginx restart 
+  236  gunicorn -w 4 -b 127.0.0.1:8080 run:app
+  237  gunicorn -w 4 -b 0.0.0.0:8080 run:app
+  238  gunicorn -w 4 -b0 run:app
+  239  cd /
+  240  cd var/www/MySite/
+  241  dir
+  242  vim run.py
+  243  gunicorn -w 4 -b0 run:app
+  244  gunicorn -w 4 -b0 127.0.0.1:8080 run:app
+  245  pkill gunicorn
+  246  gunicorn -w 4 -b0 127.0.0.1:8080 run:app
+  247  reboot
+  248  dir
+  249  cd /var/
+  250  cd www/
+  251  chown 777 MySite/
+  252  chomd 777 MySite/
+  253  127.0.0.1:8080
+  254  cd my
+  255  cd MySite/
+  256  dir
+  257  gunicorn -w 4 -b 127.0.0.1:8080 run:app
+  258  cd flask/
+  259  ll
+  260  cd bin/
+  261  dir
+  262  ll
+  263  python activate
+  264  active
+  265  activate
+  266  source activate
+  267  dir
+  268  cd ..
+  269  gunicorn -w 4 -b 127.0.0.1:8080 run:app
+  270  bg
+  271  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  272  pip install lxml
+  273  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  274  apt-get install libxml2-dev libxslt-dev python-dev
+  275  pip install lxml
+  276  sudo apt-get install python-dev
+  277  sudo apt-get grade python-dev
+  278  sudo apt-get gradeup python-dev
+  279  dir
+  280  lxml
+  281  python
+  282  sudo apt-get install python-lxml
+  283  apt-update
+  284  pip install wheel
+  285  cd /
+  286  dir
+  287  cd ..
+  288  cd ~
+  289  dir
+  290  rm lxml-3.6.4-cp27-cp27m-win_amd64.whl /var/www/MySite/
+  291  mv lxml-3.6.4-cp27-cp27m-win_amd64.whl /var/www/MySite/
+  292  dir
+  293  cd ..
+  294  cd /var/www/
+  295  dir
+  296  cd MySite/
+  297  dir
+  298  pip install lxml-3.6.4-cp27-cp27m-win_amd64.whl 
+  299  sudo pip install lxml-3.6.4-cp27-cp27m-win_amd64.whl 
+  300  python
+  301  python -v 
+  302  pip install lxml-3.6.4-cp27-cp27m-win_amd64.whl 
+  303  pip install lxml-3.6.4-cp27-cp27m-win32.whl 
+  304  pip install wheel
+  305  pip install lxml-3.6.4-cp27-cp27m-win32.whl 
+  306  cd /root/.pip
+  307  cat pop.log
+  308  dir
+  309  vim pip.log 
+  310  cd /
+  311  cd /var/
+  312  dir
+  313  cd www/
+  314  dir
+  315  cd MySite/
+  316  dirt
+  317  dir
+  318  sudo pip intall lxml
+  319  sudo apt-get lxml
+  320  sudo apt-get lmxl
+  321  sudo apt-get python-lxml
+  322  sudo apt-get install  lmxl
+  323  sudo apt-get install lxml
+  324  sudo apt-get install python-lxml
+  325  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  326  sudo easy_install lxml 
+  327  pip install libxml2
+  328  apt-get install libxml2-dev libxslt1-dev python-dev
+  329  apt-get install python-lxml
+  330  apt-get install lxml
+  331  rm /var/lib/apt/lists/lock
+  332  apt-get update
+  333  apt-get install lxml
+  334  sudo apt-get install lxml
+  335  pip instal lxml
+  336  pip install lxml
+  337  sudo apt-get install libxml2-dev libxslt1-dev python-dev
+  338  sudo apt-get install zlib1g-dev
+  339  sudo apt-get install libevent-dev
+  340  sudo pip install lxml
+  341  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  342  sudo pip install lxml=3.5.0
+  343  sudo pip install lxm
+  344  sudo pip install lxml
+  345  sudo pip install --upgrade lxml
+  346  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  347  apt-get update
+  348  sudo pip install lxml
+  349  sudo pip - lxml
+  350  sudo pip install --upgrade lxml
+  351  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  352  python
+  353  sudo apt-get build-dep python-lxml
+  354  sudo pip install lxml --upgrade
+  355  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  356  pip uninstall lxml
+  357  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  358  pip --upgrade
+  359  sudo pip install lxml=3,5,0
+  360  sudo pip install lxml=3.5.0
+  361  pip install 
+  362  exit
+  363  deactivate
+  364  dir
+  365  mv flask/
+  366  mv -rf flask/
+  367  rm -rf flask/
+  368  dir
+  369  virtualenv flask
+  370  source flask/bin/activate
+  371  dir
+  372  vim requirements.txt 
+  373  apt-get updata
+  374  apt-get update
+  375  pip install
+  376  pip
+  377  pip -h
+  378  python -m pip install -U pip
+  379  pip install -r requirements.txt 
+  380  python publish.py -a http://127.0.0.1:8080/publish -p markdownTest.md -t ucantguess
+  381  im
+  382  vim
+  383  vim requirements.txt 
+  384  python publish.py -a http://127.0.0.1:8080/publish -p hardly-install-lxml.md -t ucantguess
+  385  cd /var/www/MySite/
+  386  dir
+  387  source flask/bin/activate
+  388  python
+  389  dir
+  390  cd weblog/
+  391  dir
+  392  ll
+  393  python
+  394  vim database.py
+  395  python
+  396  dir
+  397  cd ..
+  398  python
+  399  dir
+  400  ll
+  401  cd flask/
+  402  dir
+  403  cd bin/
+  404  python
+  405  cd ..
+  406  dir
+  407  cd weblog/
+  408  dir
+  409  ll
+  410  python
+  411  python __init__.py
+  412  apt-get install tree
+  413  tree 
+  414  tree -h
+  415  tree -h 2
+  416  man tree
+  417  tree -L 3
+  418  tree -L 2
+  419  history
+  420  dir
+  421  cd /var/
+  422  dir
+  423  apt-get install sqlite
+  424  sqlite
+  425  sqlite app.db 
+  426  db$ sqlite3 app.db 
+  427  apt-get install sqlite3
+  428  apt-get install sqlite3 --upgrade
+  429  apt-get upgrade sqlite3
+  430  sqlite app.db 
+  431  sqlite2 app.db 
+  432  sqlite3 app.db 
+  433  python publish.py -a http://127.0.0.1:8080/publish -p example.md -t ucantguess
+  434  history |grep source
+  435  history |grep de
+  436  history |grep cp
+  437  python publish.py -a http://127.0.0.1:8080/publish -p nginxgunicorn.md -t ucantguess
+  438  cd /var/
+  439  cd www/
+  440  dir
+  441  cd MySite/
+  442  dir
+  443  python publish.py -a http://127.0.0.1:8080/publish -p nginxgunicorn.md -t ucantguess
+  444  dir
+  445  ll
+  446  python publish.py -a http://127.0.0.1:8080/publish -p NginxGunicorn.md -t ucantguess
+  447  sqlite3 app.db 
+  448  python publish.py -a http://127.0.0.1:8080/publish -p NginxGunicorn.md -t ucantguess
+  449  dir
+  450  cd weblog/
+  451  dir
+  452  ll
+  453  cd static/mycss/
+  454  dir
+  455  vim blog.css 
+  456  dir
+  457  cd /var/www/MySite/
+  458  dir
+  459  cd weblog/
+  460  dir
+  461  ll
+  462  cd static/
+  463  dir
+  464  ll
+  465  cd ..
+  466  dir
+  467  vim views.py
+  468  dir
+  469  cd templates/
+  470  ll
+  471  vim layout.html 
+  472  vim views.py
+  473  cd ..
+  474  dire
+  475  dir
+  476  vim views.py
+  477  cd templates/
+  478  dir'
+  479  dir
+  480  vim layout.html 
+  481  reboot
+  482  dir
+  483  vim /etc/init
+  484  cd /etc/init
+  485  dir
+  486  ll
+  487  vim mysite.conf 
+  488  sudo service mysite start
+  489  cd ..
+  490  dir
+  491  cd /var/
+  492  dir
+  493  cd www/MySite/
+  494  dir
+  495  source flask/bin/activate
+  496  gunicorn -w 8 -b 127.0.0.1:8080 run:app
+  497  cd ..
+  498  dir
+  499  cd www/MySite/
+  500  dir
+  501  ll
+  502  gunicorn -w 8 -b 127.0.0.1:8080 run:app
+  503  pip install gunicorn
+  504  gunicorn -w 8 -b 127.0.0.1:8080 run:app
+  505  gunicorn -w 8 -b 120.27.120.246:8080 run:app
+  506  dir
+  507  ll
+  508  cd weblog/
+  509  dia
+  510  vim views.py
+  511  cd ..
+  512  gunicorn -w 8 -b 120.27.120.246:8080 run:app
+  513  bg
+  514  dir
+  515  sudo service nginx restart
+  516  gunicorn -w 8 -b 127.0.0.1:8080 run:app
+  517  g
+  518  bg
+  519  history 
+  520  history  > history.txt
+  521  dir
+  522  history  > ./history.txt
